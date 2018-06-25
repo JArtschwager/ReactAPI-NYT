@@ -4,7 +4,7 @@
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
-  "homepage": "https://jartschwager.github.io/ReactAPI-NYT/",
+  "homepage": "https://jartschwager.github.io/ReactAPINYT/",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.0.0",
