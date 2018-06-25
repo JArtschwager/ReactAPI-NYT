@@ -4,7 +4,7 @@
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
-  "homepage": "https://myusername.github.io/ReactAPI-NYT/",
+  "homepage": "https://jartschwager.github.io/ReactAPI-NYT/",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -12,6 +12,8 @@
     "react-scripts": "1.0.14"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
