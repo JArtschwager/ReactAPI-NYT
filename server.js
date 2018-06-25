@@ -23,8 +23,13 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/nytreact");
+if (process.env.NODE_ENV === "production") {
+  mongoose.connect(process.env.MONGODB_URI || "mongodb://jenn_prod:kagna92tngasklfjqh@ds117711.mlab.com:17711/heroku_13r8k3pv");
 //always must be last route defined before turning server on.
+} else {
+  mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ReactAPINYT");
+}
+
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
 });
