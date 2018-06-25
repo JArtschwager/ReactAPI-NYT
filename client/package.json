@@ -2,6 +2,9 @@
   "name": "mern",
   "version": "0.1.0",
   "description": "Mern Demo",
+  "engines": {
+    "node": "8.11.0"
+  },
   "private": true,
   "proxy": "http://localhost:3001/",
   "homepage": "https://jartschwager.github.io/ReactAPINYT/",
